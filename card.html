@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart</title>
+<script src="https://kit.fontawesome.com/b82924342a.js" crossorigin="anonymous"></script>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; /* Максимальная ширина контейнера */
+  }
+
+  .product {
+    border: 1px solid rgb(151, 0, 131);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    flex: 0 0 calc(20% - 20px); /* Ширина продукта в ряду по 5 */
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product .price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .buy-button {
+    background-color: rgb(151, 0, 131);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+
+</style>
+</head>
+<body>
+  <div class="menu">
+    <div class="product">
+      <img src="https://cdn-images.farfetch-contents.com/21/01/41/10/21014110_51160627_1000.jpg" alt="Air Force 1 Mid "Off-White">
+      <div class="price">$250</div>
+      <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/18/89/44/20188944_50589784_1000.jpg" alt="Off-White">
+        <div class="price">$340</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/19/08/94/75/19089475_41665609_1000.jpg" alt="adiFOM Q lace-up">
+        <div class="price">$220</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/15/62/45/04/15624504_28291154_1000.jpg" alt="Air Jordan 1 High">
+        <div class="price">$400</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/16/08/87/73/16088773_30341948_1000.jpg" alt="Comme Des Garçons Play x Converse">
+        <div class="price">$180</div>
+        <button class="buy-button">Buy</button>
+      </div>
+  
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/13/52/74/20135274_45312076_1000.jpg" alt="Gucci">
+        <div class="price">$999</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/21/32/60/81/21326081_51300842_1000.jpg" alt="Travis Scott Air Force 1 Low">
+        <div class="price">$480</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/21/24/05/03/21240503_51073744_1000.jpg" alt="New Balance 9060">
+        <div class="price">$330</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/21/44/25/25/21442525_51405826_1000.jpg" alt="adidas Forum 84">
+        <div class="price">$199</div>
+        <button class="buy-button">Buy</button>
+      </div>
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/14/11/41/20141141_50471618_1000.jpg" alt="Off-White Slim Out">
+        <div class="price">$666</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/32/01/61/20320161_50858686_1000.jpg" alt="Union x Air Jordan 1 High OG Woven">
+        <div class="price">$555</div>
+        <button class="buy-button">Buy</button>
+      </div>
+  
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/04/51/57/20045157_50888636_1000.jpg" alt="Dolce & Gabbana Portofino">
+        <div class="price">$888</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/18/76/90/28/18769028_40597182_1000.jpg" alt="Air Force 1 Low Virgil Abloh">
+        <div class="price">$410</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/93/96/69/20939669_51156094_1000.jpg" alt="adidas Campus">
+        <div class="price">$170</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/18/53/32/40/18533240_41345107_1000.jpg" alt="Off-White Out Of Office">
+        <div class="price">$499</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/48/68/44/20486844_50504214_1000.jpg" alt="Alexander McQueen">
+        <div class="price">$255</div>
+        <button class="buy-button">Buy</button>
+      </div>
+  
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/15/65/39/43/15653943_29766320_1000.jpg" alt="Balenciaga Triple S">
+        <div class="price">$667</div>
+        <button class="buy-button">Buy</button>
+      </div>
+  
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/98/93/69/20989369_51107844_1000.jpg" alt="Valentino Garavani">
+        <div class="price">$449</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/90/43/52/20904352_50890940_1000.jpg" alt="adidas by Stella McCartney">
+        <div class="price">$222</div>
+        <button class="buy-button">Buy</button>
+      </div>
+  
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/19/95/59/33/19955933_44777305_1000.jpg" alt="On Running">
+        <div class="price">$150</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/06/38/02/20063802_45114006_1000.jpg" alt="Salomon">
+        <div class="price">$100</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/40/46/90/20404690_50336566_1000.jpg" alt=" Nike Air Zoom Alphafly Next">
+        <div class="price">$240</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/19/54/85/77/19548577_44676567_1000.jpg" alt="Hiker boots Cloudwander Waterproof">
+        <div class="price">$360</div>
+        <button class="buy-button">Buy</button>
+      </div>
+
+      <div class="product">
+        <img src="https://cdn-images.farfetch-contents.com/20/46/92/69/20469269_50367929_1000.jpg" alt="adidas NMD_R1 Red">
+        <div class="price">$289</div>
+        <button class="buy-button">Buy</button>
+      </div>
+  
+    <!-- Добавьте сюда еще продукты, повторяя блоки .product -->
+
+  </div>
+
+  <div id="cart-items"></div>
+
+  <script>
+    const buyButtons = document.querySelectorAll('.buy-button');
+    const cartItems = document.getElementById('cart-items');
+
+    buyButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const product = button.parentElement;
+        const title = product.querySelector('img').alt;
+        const price = product.querySelector('.price').textContent;
+
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+          <p>${title} - ${price}</p>
+          <button class="remove-button">Remove</button>
+        `;
+
+        cartItems.appendChild(cartItem);
+
+        // Добавим обработчик для кнопки "Remove"
+        const removeButton = cartItem.querySelector('.remove-button');
+        removeButton.addEventListener('click', () => {
+          cartItem.remove();
+        });
+      });
+    });
+  </script>
+  <style>
+    .contact-support {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff; /* Цвет фона блока с описанием */
+    color: #696969 /* Цвет текста */
+}
+.contact-support i {
+font-size: 50px;
+color: #778899; /* Color for the utensils icon */
+}
+</style> 
+</body>
+</html>
